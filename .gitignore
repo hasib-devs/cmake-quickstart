@@ -1,0 +1,76 @@
+
+# --- Build Directories ---
+build/          # CMake/Make build directory
+bin/            # Compiled binaries
+lib/            # Compiled libraries
+.vs/            # Visual Studio cache
+.cache/         # Compiler/CMake caches
+
+# --- Compiled Binaries ---
+*.exe
+*.out
+*.app
+*.so
+*.dylib
+*.dll
+*.a
+*.lib
+
+# --- Object Files ---
+*.o
+*.obj
+*.lo
+*.ko
+
+# --- CMake Generated Files ---
+CMakeCache.txt
+CMakeFiles/
+CMakeScripts/
+*.cmake
+cmake_install.cmake
+install_manifest.txt
+CTestTestfile.cmake
+
+# --- IDE/Editor Files ---
+.vscode/
+.idea/
+*.code-workspace
+*.sublime-workspace
+
+# --- Dependency Directories ---
+deps/           # Third-party dependencies (e.g., Clib)
+dependencies/
+third_party/
+
+# --- OS/Editor Temp Files ---
+.DS_Store       # macOS
+Thumbs.db       # Windows
+*.swp           # Vim swap files
+*.swo
+*.bak
+*~
+*.orig
+
+# --- Logs and Debug Files ---
+*.log
+*.tlog
+*.pid
+*.core
+*.stackdump
+
+# --- Testing/Profiling ---
+*.gcda          # GCC coverage data
+*.gcno          # GCC coverage notes
+coverage/       # Coverage reports
+perf.data*      # Profiling data
+
+# --- Package Manager Files ---
+conanbuildinfo.txt
+conaninfo.txt
+vcpkg_installed/
+
+# --- Autotools (if used) ---
+autom4te.cache/
+aclocal.m4
+configure
+config.*
