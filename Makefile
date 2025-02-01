@@ -1,7 +1,7 @@
 # Makefile for CMake-based projects
 
 # Configuration
-BUILD_DIR := build
+BUILD_DIR := bin
 TARGET := app
 TARGET_DEBUG := app_debug
 CMAKE_FLAGS := -DCMAKE_BUILD_TYPE=Release

@@ -1,16 +1,11 @@
 
 # --- Build Directories ---
-./build/
 build/
-# build/windows
-# build/linux
-# build/macos
-# build/Makefile
-# build/app_debug
-bin/            # Compiled binaries
-lib/            # Compiled libraries
-.vs/            # Visual Studio cache
-.cache/         # Compiler/CMake caches
+bin/
+
+lib/
+.vs/
+.cache/
 
 # --- Compiled Binaries ---
 *.exe
