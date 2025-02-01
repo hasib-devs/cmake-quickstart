@@ -73,9 +73,10 @@ red: clean debug
 windows:
 	@echo "Building for Windows..."
 	@mkdir -p $(BUILD_DIR)/windows
-	@cmake -B $(BUILD_DIR)/windows -G "Visual Studio 17 2022" -A x64
+	# @cmake -B $(BUILD_DIR)/windows -G "Visual Studio 17 2022" -A x64
+	@cmake -B $(BUILD_DIR)/windows -G "Unix Makefiles"
 	@cmake --build $(BUILD_DIR)/windows --config Release
-	@echo "Build complete: $(BUILD_DIR)/windows/Release/$(TARGET).exe"
+	@echo "Build complete: $(BUILD_DIR)/windows/$(TARGET).exe"
 
 
 # Build for Linux (Makefiles)
@@ -92,7 +93,7 @@ macos:
 	@mkdir -p $(BUILD_DIR)/macos
 	@cmake -B $(BUILD_DIR)/macos -G "Xcode"
 	@cmake --build $(BUILD_DIR)/macos --config Release
-	@echo "Build complete: $(BUILD_DIR)/macos/Release/$(TARGET)"
+	@echo "Build complete: $(BUILD_DIR)/macos/$(TARGET)"
 
 # ARM Linux
 linux-arm:
