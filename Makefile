@@ -5,7 +5,7 @@ BUILD_DIR := bin
 TARGET := app
 TARGET_DEBUG := app_debug
 CMAKE_FLAGS := -DCMAKE_BUILD_TYPE=Release
-CMAKE_FLAGS_DEBUG := -DCMAKE_BUILD_TYPE=Debug
+CMAKE_FLAGS_DEBUG := -Wall -Werror -DCMAKE_BUILD_TYPE=Debug
 
 # Platform detection
 UNAME := $(shell uname -s)
